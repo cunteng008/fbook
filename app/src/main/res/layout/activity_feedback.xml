@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id = "@+id/toolbar_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_goback"
+        app:title="反馈"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/font_10"
+        android:layout_marginRight="@dimen/font_10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:text="描述"/>
+            <EditText
+                android:id="@+id/et_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="@dimen/spacing_3"
+                android:gravity="top|start"
+                android:background="@drawable/shape_rect_gray"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_feedback_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_45"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/spacing_15"
+            android:text="提交"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    
+</LinearLayout>

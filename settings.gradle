@@ -1,0 +1,4 @@
+include ':app', ':library', ':circleimageview', ':volley'
+project(':library').projectDir = new File('three-part_library/BadgeView-master/library')
+project(':circleimageview').projectDir = new File('three-part_library/circleimageview')
+project(':volley').projectDir = new File('three-part_library/volley')
